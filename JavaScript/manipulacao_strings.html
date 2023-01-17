@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Manipulação de Strings</title>
+	<script>
+		var nome =  prompt('Digite uma frase :')
+		var length = nome.length
+		document.write('Essa frase tem ' + length + ' palavras <br>')
+
+		//Função para pegar a letra em determinada posição
+		document.write('A primeira letra é : ' + nome.charAt(0) + '<br>')
+
+		//Substituir textos ou letras dentro de uma String
+		document.write('Substituindo os espaços da String : ' + nome.replaceAll(' ', '-') + '<br>')
+
+		//Convertendo os carateres para caixa alta e baixa
+		document.write('Tudo em minusculo : ' + nome.toLowerCase() + '<br>')
+		document.write('Tudo em maiusculo : ' + nome.toUpperCase())
+
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
