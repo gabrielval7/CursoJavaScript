@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eventos teclado</title>
+	<script>
+		function acao1(){
+			alert('Evento disparado')
+		}
+
+
+	</script>
+</head>
+<body>
+	<!-- A ação occore antes da letra aparecer -->
+	<h3>Onkeydown</h3>
+	<input type="text" name="" onkeydown="acao1()">
+	<br>
+	<h3>Onkeyup</h3>
+	<!-- A ação occore depoisda letra aparecer -->
+	<input type="text" name="" onkeyup="acao1()">
+	<br>
+	<!-- Só dispara com caracteres. Ctrl, Shift não -->
+	<h3>Onkeypress</h3>
+	<input type="text" name="" onkeypress="acao1()">
+</body>
+</html>
