@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>For in</title>
+	<script >
+		
+	</script>
+	<style type="text/css">
+		table{
+			border: 2px solid black;
+			width: 300px;
+		}
+		#mudandoValores{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-top: 3px;
+			border: 1px solid blue;
+			background: grey;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<table id="tabela">
+		<tr>
+			<th>01</th>
+			<th>02</th>
+			<th>03</th>
+		</tr>
+		<tr>
+			<td>Notebook</td>
+			<td>Monitor</td>
+			<td>CPU</td>
+		</tr>
+		<tr>
+			<td id="v1">R$1.000</td>
+			<td id="v2">R$500</td>
+			<td id="v3">R$900</td>
+		</tr>
+	</table>
+	<script>
+		function mudarCor(){
+			document.getElementById('tabela').style.borderColor = 'red' 
+		}
+		function mudarValores(){
+			let valor = 'R$' + document.getElementById('valor').value
+			let opcao = document.getElementById('opcao').value
+			if(opcao == 'c1'){
+				document.getElementById('v1').innerHTML = valor
+			}else if(opcao == 'c2'){
+				document.getElementById('v2').innerHTML = valor
+			}else if(opcao == 'c3'){
+				document.getElementById('v3').innerHTML = valor
+			}
+		}
+	</script>
+	<button onclick="mudarCor()">MUDAR COR</button>
+	<div id="mudandoValores">
+		<button onclick="mudarValores()">MUDAR VALORES</button>
+		<br>
+		<select id="opcao">
+			<option value="c1">Coluna1</option>
+			<option value="c2">Coluna2</option>
+			<option value="c3">Coluna3</option>
+		</select>
+		<input type="text" name="" id="valor">
+	</div>
+</body>
+</html>
